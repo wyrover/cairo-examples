@@ -1,6 +1,6 @@
 # cairo-examples
 
-´Ó libcairo-2.dll µ¼³ö libcairo-2.lib Ê¹
+ä»Ž libcairo-2.dll å¯¼å‡º libcairo-2.lib ä½¿
 
 **run_dll2lib.bat**
 
