@@ -1,6 +1,7 @@
 # cairo-examples
 
-从 libcairo-2.dll 导出 libcairo-2.lib 使
+如果你不想费了劲的在 vs 下编译 cario(依赖库有点多)
+可以从 libcairo-2.dll 导出 libcairo-2.lib 使
 
 **run_dll2lib.bat**
 
