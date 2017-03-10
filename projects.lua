@@ -22,7 +22,7 @@ workspace "cairo-examples"
                 "3rdparty/cairo/libcairo-2.lib"
             }
 
-        create_wtl_project("draw_02", "src")            
+        create_wtl_project("test_double_buffer_cario_gdiplus", "src")            
             includedirs
             {
                

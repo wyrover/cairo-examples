@@ -103,15 +103,17 @@ public:
 
 			cairo_surface_t *surface = cairo_win32_surface_create (memdc.m_hDC);
 			cairo_t *cr = cairo_create(surface);
-
+			cairo_surface_destroy(surface);
 			// Draw on the cairo context.
 			gradientExample(cr);
 			
 			// Cleanup.
 			cairo_destroy(cr);
-			cairo_surface_destroy(surface);
-			memdc.DrawText( _T( "I'm custom drawn."), 0, &clientrc,
+
+			std::wstring test_str = L"I'm gdi draw.";			
+			memdc.DrawText( test_str.c_str(), test_str.length(), &clientrc,
 				DT_CENTER | DT_SINGLELINE | DT_VCENTER );
+
 			dc.BitBlt(0, 0, clientrc.Width(), clientrc.Height(), memdc, 0, 0, SRCCOPY);
 			memdc.SelectBitmap(hOldBitmap);
 		}
