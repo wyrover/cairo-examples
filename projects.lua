@@ -21,3 +21,14 @@ workspace "cairo-examples"
             {
                 "3rdparty/cairo/libcairo-2.lib"
             }
+
+        create_wtl_project("draw_02", "src")            
+            includedirs
+            {
+               
+                "3rdparty/cairo"
+            }
+            links
+            {
+                "3rdparty/cairo/libcairo-2.lib"
+            }
